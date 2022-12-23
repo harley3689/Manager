@@ -5,6 +5,7 @@ public class Product {
     private String category;
 
     public Product() {
+
     }
 
     public void setTitle(String title) {

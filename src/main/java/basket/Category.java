@@ -31,10 +31,10 @@ public class Category implements Serializable {
     public int getYearSum(String date) {
         int yearSum = 0;
 
-        String year = date.substring(0,4);
+        String year = date.substring(0, 4);
 
         for (Cheque cheque : cheques) {
-            String chequeYear = cheque.getDate().substring(0,4);
+            String chequeYear = cheque.getDate().substring(0, 4);
             if (year.equals(chequeYear)) {
                 yearSum += cheque.getSum();
             }
@@ -45,10 +45,10 @@ public class Category implements Serializable {
     public int getMonthSum(String date) {
         int monthSum = 0;
 
-        String month = date.substring(0,7);
+        String month = date.substring(0, 7);
 
         for (Cheque cheque : cheques) {
-            String chequeMonth = cheque.getDate().substring(0,7);
+            String chequeMonth = cheque.getDate().substring(0, 7);
             if (month.equals(chequeMonth)) {
                 monthSum += cheque.getSum();
             }

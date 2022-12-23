@@ -1,3 +1,4 @@
+
 import basket.Category;
 import basket.Product;
 import com.google.gson.Gson;
@@ -84,7 +85,7 @@ public class Main {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Не могу стартовать сервер");
+            System.out.println("Don't start! Error!");
             e.printStackTrace();
         }
     }
